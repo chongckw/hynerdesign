@@ -1,0 +1,358 @@
+html {
+    background-image: url('../../assets/image/demos/GF-images/1.jpg'),
+    url('../../assets/image/demos/GF-images/2.jpg'),
+    url('../../assets/image/demos/GF-images/3.jpg'),
+    url('../../assets/image/demos/GF-images/4.jpg'),
+    url('../../assets/image/demos/GF-images/5.jpg'),
+    url('../../assets/image/demos/GF-images/6.jpg'),
+    url('../../assets/image/demos/GF-images/7.jpg'),
+    url('../../assets/image/demos/GF-images/8.jpg'),
+    url('../../assets/image/demos/GF-images/9.jpg'),
+    url('../../assets/image/demos/IHKL-images/1.jpg'),
+    url('../../assets/image/demos/IHKL-images/2.jpg'),
+    url('../../assets/image/demos/IHKL-images/3.jpg'),
+    url('../../assets/image/demos/IHKL-images/4.jpg'),
+    url('../../assets/image/demos/IHKL-images/5.jpg'),
+    url('../../assets/image/demos/IHKL-images/6.jpg'),
+    url('../../assets/image/demos/IHKL-images/7.jpg'),
+    url('../../assets/image/demos/IHKL-images/8.jpg'),
+    url('../../assets/image/demos/IHKL-images/9.jpg'),
+    url('../../assets/image/demos/IHKL-images/10.jpg'),
+    url('../../assets/image/demos/IHKL-images/11.jpg'),
+    url('../../assets/image/demos/IHKL-images/12.jpg'),
+    url('../../assets/image/demos/IHKL-images/13.jpg'),
+    url('../../assets/image/demos/JBBW-images/1.jpg'),
+    url('../../assets/image/demos/JBBW-images/2.jpg'),
+    url('../../assets/image/demos/JBBW-images/3.jpg'),
+    url('../../assets/image/demos/JBBW-images/4.jpg'),
+    url('../../assets/image/demos/JBBW-images/5.jpg'),
+    url('../../assets/image/demos/JBBW-images/6.jpg'),
+    url('../../assets/image/demos/JBBW-images/7.jpg'),
+    url('../../assets/image/demos/JBBW-images/8.jpg'),
+    url('../../assets/image/demos/JBBW-images/9.jpg'),
+    url('../../assets/image/demos/JBBW-images/10.jpg'),
+    url('../../assets/image/demos/JBBW-images/11.jpg'),
+    url('../../assets/image/demos/JBBW-images/12.jpg'),
+    url('../../assets/image/demos/JBBW-images/13.jpg'),
+    url('../../assets/image/demos/JBBW-images/14.jpg'),
+    url('../../assets/image/demos/JBBW-images/15.jpg'),
+    url('../../assets/image/demos/JBBW-images/16.jpg'),
+    url('../../assets/image/demos/JBBW-images/17.jpg'),
+    url('../../assets/image/demos/JBBW-images/18.jpg'),
+    url('../../assets/image/demos/JBBW-images/19.jpg'),
+    url('../../assets/image/demos/JBBW-images/20.jpg'),
+    url('../../assets/image/demos/JBBW-images/21.jpg'),
+    url('../../assets/image/demos/JBML-images/1.jpg'),
+    url('../../assets/image/demos/JBML-images/2.jpg'),
+    url('../../assets/image/demos/JBML-images/3.jpg'),
+    url('../../assets/image/demos/JBML-images/4.jpg'),
+    url('../../assets/image/demos/JBML-images/5.jpg'),
+    url('../../assets/image/demos/JBML-images/6.jpg'),
+    url('../../assets/image/demos/JBML-images/7.jpg'),
+    url('../../assets/image/demos/JBML-images/8.jpg'),
+    url('../../assets/image/demos/JMYG-images/1.jpg'),
+    url('../../assets/image/demos/JMYG-images/2.jpg'),
+    url('../../assets/image/demos/JMYG-images/3.jpg'),
+    url('../../assets/image/demos/JMYG-images/4.jpg'),
+    url('../../assets/image/demos/JMYG-images/5.jpg'),
+    url('../../assets/image/demos/JMYG-images/6.jpg'),
+    url('../../assets/image/demos/JMYG-images/7.jpg'),
+    url('../../assets/image/demos/JMYG-images/8.jpg'),
+    url('../../assets/image/demos/JMYG-images/9.jpg'),
+    url('../../assets/image/demos/JMYG-images/10.jpg'),
+    url('../../assets/image/demos/JMYG-images/11.jpg'),
+    url('../../assets/image/demos/JMYG-images/12.jpg'),
+    url('../../assets/image/demos/JMYG-images/13.jpg'),
+    url('../../assets/image/demos/JMYG-images/14.jpg'),
+    url('../../assets/image/demos/JMYG-images/15.jpg'),
+    url('../../assets/image/demos/JMYG-images/16.jpg'),
+    url('../../assets/image/demos/JMYG-images/17.jpg'),
+    url('../../assets/image/demos/JMYG-images/18.jpg'),
+    url('../../assets/image/demos/JMYG-images/19.jpg'),
+    url('../../assets/image/demos/JMYG-images/20.jpg'),
+    url('../../assets/image/demos/JMYG-images/21.jpg'),
+    url('../../assets/image/demos/KKWK-images/1.jpg'),
+    url('../../assets/image/demos/KKWK-images/2.jpg'),
+    url('../../assets/image/demos/KKWK-images/3.jpg'),
+    url('../../assets/image/demos/KKWK-images/4.jpg'),
+    url('../../assets/image/demos/KKWK-images/5.jpg'),
+    url('../../assets/image/demos/KKWK-images/6.jpg'),
+    url('../../assets/image/demos/KKWK-images/7.jpg'),
+    url('../../assets/image/demos/KKWK-images/8.jpg'),
+    url('../../assets/image/demos/KKWK-images/9.jpg'),
+    url('../../assets/image/demos/KKWK-images/10.jpg'),
+    url('../../assets/image/demos/KKWK-images/11.jpg'),
+    url('../../assets/image/demos/KKWK-images/12.jpg'),
+    url('../../assets/image/demos/KKWK-images/13.jpg'),
+    url('../../assets/image/demos/MMJT-images/1.jpg'),
+    url('../../assets/image/demos/MMJT-images/2.jpg'),
+    url('../../assets/image/demos/MMJT-images/3.jpg'),
+    url('../../assets/image/demos/MMJT-images/4.jpg'),
+    url('../../assets/image/demos/MMJT-images/5.jpg'),
+    url('../../assets/image/demos/MMJT-images/6.jpg'),
+    url('../../assets/image/demos/MMJT-images/7.jpg'),
+    url('../../assets/image/demos/MMJT-images/8.jpg'),
+    url('../../assets/image/demos/MMJT-images/9.jpg'),
+    url('../../assets/image/demos/MMJT-images/10.jpg'),
+    url('../../assets/image/demos/MMJT-images/11.jpg'),
+    url('../../assets/image/demos/MMJT-images/12.jpg'),
+    url('../../assets/image/demos/PJHY-images/1.jpg'),
+    url('../../assets/image/demos/PJHY-images/2.jpg'),
+    url('../../assets/image/demos/PJHY-images/3.jpg'),
+    url('../../assets/image/demos/PJHY-images/4.jpg'),
+    url('../../assets/image/demos/PJHY-images/5.jpg'),
+    url('../../assets/image/demos/PJHY-images/6.jpg'),
+    url('../../assets/image/demos/PJHY-images/7.jpg'),
+    url('../../assets/image/demos/PJHY-images/8.jpg'),
+    url('../../assets/image/demos/PJHY-images/9.jpg'),
+    url('../../assets/image/demos/PJHY-images/10.jpg'),
+    url('../../assets/image/demos/PJHY-images/11.jpg'),
+    url('../../assets/image/demos/PJHY-images/12.jpg'),
+    url('../../assets/image/demos/PJHY-images/13.jpg'),
+    url('../../assets/image/demos/PJHY-images/14.jpg'),
+    url('../../assets/image/demos/PJHY-images/15.jpg'),
+    url('../../assets/image/demos/PJHY-images/16.jpg'),
+    url('../../assets/image/demos/PJHY-images/17.jpg'),
+    url('../../assets/image/demos/PJHY-images/18.jpg'),
+    url('../../assets/image/demos/PJHY-images/19.jpg'),
+    url('../../assets/image/demos/PJHY-images/20.jpg'),
+    url('../../assets/image/demos/SASF-images/1.jpg'),
+    url('../../assets/image/demos/SASF-images/2.jpg'),
+    url('../../assets/image/demos/SASF-images/3.jpg'),
+    url('../../assets/image/demos/SASF-images/4.jpg'),
+    url('../../assets/image/demos/SASF-images/5.jpg'),
+    url('../../assets/image/demos/SASF-images/6.jpg'),
+    url('../../assets/image/demos/SASF-images/7.jpg'),
+    url('../../assets/image/demos/SASF-images/8.jpg'),
+    url('../../assets/image/demos/SASF-images/9.jpg'),
+    url('../../assets/image/demos/SASF-images/10.jpg'),
+    url('../../assets/image/demos/SASF-images/11.jpg'),
+    url('../../assets/image/demos/SEMS-images/1.jpg'),
+    url('../../assets/image/demos/SEMS-images/2.jpg'),
+    url('../../assets/image/demos/SEMS-images/3.jpg'),
+    url('../../assets/image/demos/SEMS-images/4.jpg'),
+    url('../../assets/image/demos/SEMS-images/5.jpg'),
+    url('../../assets/image/demos/SEMS-images/6.jpg'),
+    url('../../assets/image/demos/SEMS-images/7.jpg'),
+    url('../../assets/image/demos/SEMS-images/8.jpg'),
+    url('../../assets/image/demos/SEMS-images/9.jpg'),
+    url('../../assets/image/demos/SEMS-images/10.jpg'),
+    url('../../assets/image/demos/SEMS-images/11.jpg'),
+    url('../../assets/image/demos/SEMS-images/12.jpg'),
+    url('../../assets/image/demos/SEMS-images/13.jpg'),
+    url('../../assets/image/demos/SEMS-images/14.jpg');
+}
+
+.container {
+    margin-top: 5em !important;
+}
+
+h1 {
+    letter-spacing: 15px;
+    text-transform: uppercase;
+}
+
+h5, .caption {
+    font-family: Khand,sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 1.2em;
+    font-weight: 600;
+    letter-spacing: .1em;
+    margin: 25px 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.company-info-icon {
+    font-size: 50px;
+}
+
+.caption-label, 
+.company-info-container p,
+.carousel p  {
+    color: #cccccc;
+    font-weight: 1;
+    font-size: 15px;
+}
+
+.portfolio-image,
+.carousel {
+    margin: 0 2rem;
+}
+
+a img {
+    width: 100%;    
+}
+
+.caption {
+    display: block;
+    text-align: left;
+}
+
+.portfolio-section {
+    display: inline-flex;
+}
+
+.portfolio-container {
+    margin: 0 2rem;
+}
+
+
+.company-info,
+.contact-us {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.company-info-container {
+    width: 100vw;
+    text-align: left;
+}
+
+.slick-dots li.slick-active button {
+    background: #8E7861 !important; 
+}
+
+.slick-dots li {
+    margin-inline: 1px !important;
+}
+
+.carousel-dots {
+    bottom: -10px !important;
+}
+
+
+.title-carousel {
+    margin-top:50px;
+}
+
+.title-carousel .btn {
+    width: 90%;
+    background: black;
+}
+
+.demo-carousel .btn {
+    height: 680px;
+}
+
+.demo-carousel .btn img{
+    height: 100%;
+    width: 100%;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+.ant-select{
+    background-color: #101010 !important;
+    border: unset !important;
+    border-radius: unset !important;
+    font-family: Khand,sans-serif;
+    text-transform: uppercase;
+    color: #8E7861 !important;
+    margin: 10px !important;
+    width: 100%;
+}
+
+.ant-select-selector {
+    background-color: #101010 !important;
+    border: unset !important;
+    color: #8E7861 !important;
+}
+
+
+
+input::placeholder,
+.ant-select-selection-placeholder {
+    color: #8E7861 !important;
+    font-family: Khand,sans-serif;
+    text-transform: uppercase;
+    text-align: left;;
+}
+
+.ant-select-selection-item{
+    text-align: left;
+}
+
+button {
+    font-family: Khand,sans-serif;
+    text-transform: uppercase;
+    background-color: #8E7861 !important;
+    border: unset !important;
+    border-radius: unset !important;
+}
+
+button:hover {
+    border: unset;
+    border-radius: unset;
+}
+
+/* Arrow right */
+.icon-svg--arrow-right path:first-child{fill:none;stroke:currentColor;stroke-width:1.3}
+.icon-svg--arrow-right path:last-child{fill:currentColor;stroke:none}
+.icon-layout--textual-right svg{margin-right:7px;}
+.icon-layout--textual-right svg{overflow:visible}
+.icon-layout--textual-right svg path{transition:transform .5s cubic-bezier(.39,.63,.18,.89)}
+.icon-layout--textual-right svg path:nth-of-type(1){transform:scaleX(1)}
+.icon-layout--textual-right svg path:nth-of-type(2){transform:translateX(0)}
+.icon-layout--textual-right:hover{color:#8E7861;background-color:transparent}
+.icon-layout--textual-right:hover svg path:nth-of-type(1){transform:scaleX(1.23)}
+.icon-layout--textual-right:hover svg path:nth-of-type(2){transform:translateX(7px)}
+
+
+/* Arrow Up */
+.icon-svg--back-to-top path:first-child{fill:none;stroke:currentColor}
+.icon-svg--back-to-top path:last-child{fill:currentColor;stroke:none}
+.icon--back-to-top_hyperlink{width:20px;height:41px;--qode-hover-scale:1.3;--qode-hover-move:-8px}
+.icon--back-to-top_hyperlink .icon-back-to-top-icon{color:var(--qode-main-color);background-color:transparent;border:none;overflow:visible}
+.icon--back-to-top_hyperlink svg{display:block;width:auto;height:auto;fill:currentColor}
+.icon--back-to-top_hyperlink svg{transform:translateZ(0)}#icon-back-to-top.icon--back-to-top_hyperlink svg{overflow:visible}
+.icon--back-to-top_hyperlink svg path{transition:transform .6s cubic-bezier(.39,.63,.18,.89)}
+.icon--back-to-top_hyperlink svg path:nth-of-type(1){transform:scaleY(1);transform-origin:bottom;stroke-width:1.2}
+.icon--back-to-top_hyperlink svg path:nth-of-type(2){transform:translateY(0)}
+.icon--back-to-top_hyperlink:hover svg path:nth-of-type(1){transform:scaleY(1.3)}
+.icon--back-to-top_hyperlink:hover svg path:nth-of-type(2){transform:translateY(-8px)}
+
+
+
+@media only screen and (max-width: 600px) {
+    .portfolio-section {
+        display: block;
+    }
+
+    .portfolio-container {
+        margin: 0;
+    }
+
+    .demo-carousel .btn {
+        height: 250px;
+    }
+
+    .title-carousel-container h1 {
+        font-size: 15px;
+    }
+
+    .title-carousel-container {
+        text-align: center;
+    }
+}
+
+
+@media only screen and (min-width: 1900px) {
+    .portfolio-container {
+        margin: 0 5rem;
+    }
+}
