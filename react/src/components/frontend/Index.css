@@ -302,12 +302,12 @@ button:hover {
     }
 
     .group-image-with-text p {
-        font-size: 4px;
+        font-size: 4.3px;
         margin: 10px;
     }
 
-    .group-image-img {
-        width: 65% !important;
+    .group-image-with-text .group-image-img {
+        width: 50% !important;
     }
 
     .portfolio-section {

@@ -73,7 +73,7 @@ export const Index = ({handleLanguageChange}) => {
         <Fade direction="right" duration={2000} triggerOnce={true}>
           <div style={{overflow:'hidden'}}>
             <div className='welcome-content'>
-              <Carousel className='welcome-carousel' effect="fade">
+              <Carousel autoplay className='welcome-carousel' effect="fade">
                 <h1>
                   {getTranslation('welcome-to')} <br/> <label>
                   {getTranslation('hyner-design')}</label></h1>
