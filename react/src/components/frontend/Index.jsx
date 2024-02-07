@@ -1,6 +1,8 @@
-import { Col, Row } from 'antd';
+import { FloatButton, Carousel, Col, Row, Modal } from 'antd';
 import { Fade } from "react-awesome-reveal";
-import { PlusOutlined } from '@ant-design/icons';
+import { HighlightOutlined, PhoneOutlined, FormOutlined, ToolOutlined, SmileOutlined, FacebookFilled, WhatsAppOutlined, CompassOutlined } from '@ant-design/icons';
+
+import { FormattedMessage } from 'react-intl';
 
 import './Index.css'
 import './border.scss'
@@ -14,16 +16,160 @@ import landing5 from "../../assets/image/landing05.jpg";
 import landing6 from "../../assets/image/landing06.jpg";
 import landing7 from "../../assets/image/landing07.jpg";
 import landing8 from "../../assets/image/landing08.jpg";
+
+import demo1 from "../../assets/image/welcomes/demo1.jpg";
+import demo2 from "../../assets/image/welcomes/demo2.jpg";
+import demo3 from "../../assets/image/welcomes/demo3.jpg";
+import demo4 from "../../assets/image/welcomes/demo4.jpg";
+
+import desmond1 from "../../assets/image/welcomes/desmond1.jpg";
+import desmond2 from "../../assets/image/welcomes/desmond2.jpg";
+import desmond3 from "../../assets/image/welcomes/desmond3.jpg";
+
+
+import isaac1 from "../../assets/image/welcomes/isaac1.jpg";
+import isaac2 from "../../assets/image/welcomes/isaac2.jpg";
+import isaac3 from "../../assets/image/welcomes/isaac3.jpg";
+
+
+import steph1 from "../../assets/image/welcomes/steph1.jpg";
+import steph2 from "../../assets/image/welcomes/steph2.jpg";
+import steph3 from "../../assets/image/welcomes/steph3.jpg";
+
 import { CarouselDisplay } from './CarouselDisplay';
 import { ContactUs } from './ContactUs';
+import { useState } from 'react';
+import { getTranslation } from '../../helper';
 
-export const Index = () => {
+export const Index = ({handleLanguageChange}) => {
+
+  const [modal, setModal] = useState(false);
+
+  window.onscroll = function() {myFunction()};
+  
+  const contactUs = () => {
+    setModal(true);
+  }
+
+  function myFunction() {
+    var button = document.getElementById("float-button");
+    if(window.pageYOffset > 300) {
+      button.style.display = "block";
+    }
+    else {
+      button.style.display = "none";
+    }
+  }
+
   return (
     <div style={{overflow:'hidden'}}>
+        <Fade direction="right" duration={2000} triggerOnce={true} className='header sticky'>
+            <div>
+                <img src={logo} className="logo"/>
+                <span className="locale-container"> <label onClick={() => {handleLanguageChange('zh') }}>中</label> | <label onClick={() => {handleLanguageChange('en')}}>EN</label></span>
+            </div>
+        </Fade>
+        
         <Fade direction="right" duration={2000} triggerOnce={true}>
-          <div style={{overflow:'hidden', marginBottom: '100px'}}>
-            <img src={logo} width={'300px'}/>
-            <h1>Welcome to Hyner <br/>Life Style Design & Consultant</h1>
+          <div style={{overflow:'hidden'}}>
+            <div className='welcome-content'>
+              <Carousel className='welcome-carousel' effect="fade">
+                <h1>
+                  {getTranslation('welcome-to')} <br/> <label>
+                  {getTranslation('hyner-design')}</label></h1>
+                <div>
+                    <a className="btn">
+                    <span>
+                        <span>
+                        <span className='group-image-with-text'>
+                            <img src={demo1} className="group-image-img"/>
+                            <p>{getTranslation('demo-1')}</p>
+                        </span>
+                        </span>
+                    </span>
+                    </a>
+                </div>
+                <div>
+                    <a className="btn">
+                    <span>
+                        <span>
+                        <span className='group-image-with-text'>
+                            <p>{getTranslation('demo-2')}</p>
+                            <img src={demo2} className="group-image-img"/>
+                        </span>
+                        </span>
+                    </span>
+                    </a>
+                </div>
+                <div>
+                    <a className="btn">
+                    <span>
+                        <span>
+                        <span className='group-image-with-text'>
+                            <img src={demo3} className="group-image-img" style={{width: '10vw'}}/>
+                            <p>{getTranslation('demo-3')}</p>
+                        </span>
+                        </span>
+                    </span>
+                    </a>
+                </div>
+                <div>
+                    <a className="btn">
+                    <span>
+                        <span>
+                        <span className='group-image-with-text'>
+                            <p>{getTranslation('demo-4')}</p>
+                            <img src={demo4} className="group-image-img"/>
+                        </span>
+                        </span>
+                    </span>
+                    </a>
+                </div>
+
+                <div>
+                    <a className="btn">
+                    <span>
+                        <span>
+                        <span className='group-image'>
+                            <img src={desmond1} className="group-image-img"/>
+                            <img src={desmond2} className="group-image-img"/>
+                            <img src={desmond3} className="group-image-img"/>
+                        </span>
+                        </span>
+                    </span>
+                    </a>
+                </div>
+
+                <div>
+                    <a className="btn">
+                    <span>
+                        <span>
+                        <span className='group-image'>
+                            <img src={isaac1} className="group-image-img"/>
+                            <img src={isaac2} className="group-image-img"/>
+                            <img src={isaac3} className="group-image-img"/>
+                        </span>
+                        </span>
+                    </span>
+                    </a>
+                </div>
+
+                <div>
+                    <a className="btn">
+                    <span>
+                        <span>
+                        <span className='group-image'>
+                            <img src={steph1} className="group-image-img"/>
+                            <img src={steph2} className="group-image-img"/>
+                            <img src={steph3} className="group-image-img"/>
+                        </span>
+                        </span>
+                    </span>
+                    </a>
+                </div>
+
+              </Carousel>
+            </div>
           </div>
         </Fade>
         
@@ -41,7 +187,7 @@ export const Index = () => {
                             </span>
                           </span>
                         </a>
-                        <span className="caption">Project <br /> <label className="caption-label">01</label></span>
+                        <span className="caption">{getTranslation('project')} <br /> <label className="caption-label">01</label></span>
                     </div>
                 </Fade>
 
@@ -56,7 +202,7 @@ export const Index = () => {
                         </span>
                       </span>
                     </a>
-                    <span className="caption">Project <br /> <label className="caption-label">02</label></span>
+                    <span className="caption">{getTranslation('project')} <br /> <label className="caption-label">02</label></span>
                 </div>
               </Fade>
             </div>
@@ -73,7 +219,7 @@ export const Index = () => {
                         </span>
                       </span>
                     </a>
-                    <span className="caption">Project <br /> <label className="caption-label">03</label></span>
+                    <span className="caption">{getTranslation('project')} <br /> <label className="caption-label">03</label></span>
                 </div>
               </Fade>
               
@@ -88,7 +234,7 @@ export const Index = () => {
                             </span>
                           </span>
                         </a>
-                        <span className="caption">Project <br /> <label className="caption-label">04</label></span>
+                        <span className="caption">{getTranslation('project')} <br /> <label className="caption-label">04</label></span>
                     </div>
                 </Fade>
             </div>
@@ -105,7 +251,7 @@ export const Index = () => {
                             </span>
                           </span>
                         </a>
-                        <span className="caption">Project <br /> <label className="caption-label">05</label></span>
+                        <span className="caption">{getTranslation('project')} <br /> <label className="caption-label">05</label></span>
                     </div>
                 </Fade>
 
@@ -120,7 +266,7 @@ export const Index = () => {
                         </span>
                       </span>
                     </a>
-                    <span className="caption">Project <br /> <label className="caption-label">06</label></span>
+                    <span className="caption">{getTranslation('project')} <br /> <label className="caption-label">06</label></span>
                 </div>
               </Fade>
             </div>
@@ -137,7 +283,7 @@ export const Index = () => {
                             </span>
                           </span>
                         </a>
-                        <span className="caption">Project <br /> <label className="caption-label">07</label></span>
+                        <span className="caption">{getTranslation('project')} <br /> <label className="caption-label">07</label></span>
                     </div>
                 </Fade>
 
@@ -152,7 +298,7 @@ export const Index = () => {
                             </span>
                           </span>
                         </a>
-                        <span className="caption">Project <br /> <label className="caption-label">08</label></span>
+                        <span className="caption">{getTranslation('project')} <br /> <label className="caption-label">08</label></span>
                     </div>
                 </Fade>
             </div>
@@ -161,48 +307,47 @@ export const Index = () => {
         <section className="company-info container">
           <Row className="company-info-container" justify='space-evenly'>
             <Col md={4} xs={24}>
-            <div className="qodef-m-icon-wrapper">
-              {/* <svg xmlns="http://www.w3.org/2000/svg" width="60.604" height="60.604"><g fill="#8e7861"><path d="M29.999 10.394a20.217 20.217 0 0 0-7.867 38.835 20.217 20.217 0 0 0 15.734-37.247 20.084 20.084 0 0 0-7.867-1.588m0-1A21.211 21.211 0 1 1 8.788 30.605 21.211 21.211 0 0 1 29.999 9.394Z" /><path d="M30.802 60.6h-1V0h1Z" /><path d="M.004 30.802v-1h60.6v1Z" /></g></svg>		 */}
-              <PlusOutlined className="company-info-icon"/>
+            <div>
+              <FormOutlined className="company-info-icon"/>
             </div>
             <div>
               <h5>
-                  <span>1-CLICK IMPORT</span>
+                  <span>{getTranslation('step')} 1</span>
               </h5>
-              <p>You can get the entire Tadao demo content with just a single mouse click.</p>
+              <p>{getTranslation('step-1-content')}</p>
             </div>
             </Col>
             <Col md={4} xs={24}>
             <div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="42.411" height="61"><g fill="#8e7861"><path d="M1 1v40.411h40.411V1H1M0 0h42.411v42.411H0Z" /><path d="M21.706 42.162h-1V.25h1Z" /><path d="M42.162 21.706H21.206v-1h20.956Z" /><path d="M32.184 42.162h-1V21.206h1Z" /><path d="M42.162 32.184H31.684v-1h10.478Z" /><path d="M37.423 42.162h-1V31.684h1Z" /></g></svg>
+              <HighlightOutlined className="company-info-icon"/>
             </div>
             <div>
               <h5>
-                  <span>Elementor</span>
+                  <span>{getTranslation('step')} 2</span>
               </h5>
-              <p>Fully compatible with the powerful drag-and-drop page builder plugin. </p>
+              <p>{getTranslation('step-2-content')}</p>
             </div>
             </Col>
             <Col md={4} xs={24}>
             <div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="49.178" height="61"><g fill="#8e7861"><path d="M24.589 1.994 1.736 41.411h45.707L24.589 1.994m0-1.994 24.589 42.411H0Z" /><path d="M24.59 40.417 47.443 1H1.736L24.59 40.417m0 1.994L.001 0h49.178Z" /></g></svg>		
+              <ToolOutlined className="company-info-icon"/>
             </div>
             <div>
                 <h5>
-                  <span>CUSTOMIZATION</span>
+                  <span>{getTranslation('step')} 3</span>
                 </h5>
-                <p>Configure each and every aspect of your new website with complete ease.</p>
+                <p>{getTranslation('step-3-content')}</p>
             </div>
             </Col>
             <Col md={4} xs={24}>
             <div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="55.554" height="61"><g fill="#8e7861"><path d="M27.777 1a26.784 26.784 0 0 0-10.422 51.45A26.786 26.786 0 0 0 38.2 3.1 26.608 26.608 0 0 0 27.777 1m0-1A27.777 27.777 0 1 1 0 27.777 27.777 27.777 0 0 1 27.777 0Z" /><path d="M37.598 10.166a16.955 16.955 0 0 0-11.989 28.945 16.956 16.956 0 1 0 23.979-23.979 16.844 16.844 0 0 0-11.99-4.966m0-1a17.955 17.955 0 1 1-17.955 17.955A17.955 17.955 0 0 1 37.598 9.166Z" /><path d="M37.598 23.262A10.408 10.408 0 1 0 48.005 33.67a10.42 10.42 0 0 0-10.407-10.408m0-1A11.408 11.408 0 1 1 26.19 33.67a11.408 11.408 0 0 1 11.408-11.408Z" /><path d="M33.203 28.122a6.013 6.013 0 1 0 6.013 6.013 6.02 6.02 0 0 0-6.013-6.013m0-1a7.013 7.013 0 1 1-7.013 7.013 7.013 7.013 0 0 1 7.013-7.013Z" /><path d="M34.186 28.776a3.722 3.722 0 1 0 3.721 3.722 3.726 3.726 0 0 0-3.721-3.722m0-1a4.722 4.722 0 1 1-4.722 4.722 4.722 4.722 0 0 1 4.722-4.722Z" /><path d="M36.056 30.552a1.852 1.852 0 1 0 1.848 1.852 1.854 1.854 0 0 0-1.848-1.852m0-1a2.852 2.852 0 1 1-2.852 2.852 2.852 2.852 0 0 1 2.852-2.852Z" /></g></svg>		
+              <SmileOutlined className="company-info-icon"/>
             </div>
             <div>
               <h5>
-                  <span>HELP CENTER</span>
+                  <span>{getTranslation('step')} 4</span>
               </h5>
-              <p>If you run into any questions or concerns, visit our official Help Center. </p>
+              <p>{getTranslation('step-4-content')}</p>
             </div>
             </Col>
           </Row>
@@ -210,16 +355,50 @@ export const Index = () => {
 
         <CarouselDisplay />
 
-        <ContactUs />
 
-        {/* <span className="icon-layout--textual-right">
-          <svg className="icon-svg--arrow-right" xmlns="http://www.w3.org/2000/svg" width="35" height="10"><g><path d="M30 4.5H0"/><path d="m 35.07 4.5 l -8.75 5 V -0.3 Z"/></g></svg>	
-        </span> */}
+        <section className="company-info container">
+          <Row className="company-info-container" justify='space-evenly' style={{textAlign: 'center'}}>
+            <Col md={8} xs={24}>
+              <a href="https://www.facebook.com/hynerdesign/?paipv=0&eav=AfaDlk7nxIfF9sbesw5GX0yAhBHdqPOoziQjyc9Fs4nOq13q56rquEUfMFTsBohDwRg&_rdr" target="_blank" rel="noreferrer">
+                <div>
+                  <FacebookFilled className="company-info-icon"/>
+                  <h5>
+                      <span>Facebook</span>
+                  </h5>
+                </div>
+              </a>
+            </Col>
+            <Col md={8} xs={24}>
+            <a href="https://wa.me/message/VZDCLHZKN4NZP1" target="_blank" rel="noreferrer">
+              <div>
+                <WhatsAppOutlined className="company-info-icon"/>
+                <h5>
+                    <span>WhatsApp</span>
+                </h5>
+              </div>
+            </a>
+            </Col>
+            <Col md={8} xs={24}>
+              <div>
+                <CompassOutlined className="company-info-icon"/>
+              </div>
+              <h5>
+                  <span>{getTranslation("address")}</span> <br/>
+                  <span>5A Jalan Sasa 3 Taman Gaya, 81100</span>
+              </h5>
+            </Col>
+          </Row>
+        </section>
 
-        {/* <a className="icon--back-to-top_hyperlink">
-          <span>
-          <svg className="icon-svg--back-to-top" xmlns="http://www.w3.org/2000/svg" width="10" height="41"><g><path d="M5.25 6.058v35"/><path d="m5.75 0 5 8.75H0Z"/></g></svg>	</span>
-        </a> */}
+
+        <FloatButton onClick={contactUs} shape="circle" id="float-button" icon={<PhoneOutlined />}/>
+        <Modal
+            open={modal}
+            footer=""
+            onCancel={() => {setModal(false)}}
+          >
+            <ContactUs closeModal={setModal}/>
+          </Modal>
     </div>
   )
 }

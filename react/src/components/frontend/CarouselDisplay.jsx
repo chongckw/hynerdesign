@@ -1,10 +1,11 @@
 import { Carousel, Col, Row } from 'antd'
 import { useState } from 'react'
+import { getTranslation } from '../../helper';
 
 export const CarouselDisplay = () => {
     const data = [
         {
-            value: 'Project 01',
+            value: '01',
             title: 'GF',
             images: [
                 require('../../assets/image/demos/GF-images/1.jpg'),
@@ -19,7 +20,7 @@ export const CarouselDisplay = () => {
             ]
         },
         {
-            value: 'Project 02',
+            value: '02',
             title: 'IHKL',
             images: [
                 require('../../assets/image/demos/IHKL-images/1.jpg'),
@@ -38,7 +39,7 @@ export const CarouselDisplay = () => {
             ]
         },
         {
-            value: 'Project 03',
+            value: '03',
             title: 'JBBW',
             images: [
                 require('../../assets/image/demos/JBBW-images/1.jpg'),
@@ -65,7 +66,7 @@ export const CarouselDisplay = () => {
             ]
         },
         {
-            value: 'Project 04',
+            value: '04',
             title: 'JBML',
             images: [
                 require('../../assets/image/demos/JBML-images/1.jpg'),
@@ -79,7 +80,7 @@ export const CarouselDisplay = () => {
             ]
         },
         {
-            value: 'Project 05',
+            value: '05',
             title: 'JMYG',
             images: [
                 require('../../assets/image/demos/JMYG-images/1.jpg'),
@@ -106,7 +107,7 @@ export const CarouselDisplay = () => {
             ]
         },
         {
-            value: 'Project 06',
+            value: '06',
             title: 'KKWK',
             images: [
                 require('../../assets/image/demos/KKWK-images/1.jpg'),
@@ -125,7 +126,7 @@ export const CarouselDisplay = () => {
             ]
         },
         {
-            value: 'Project 07',
+            value: '07',
             title: 'MMJT',
             images: [
                 require('../../assets/image/demos/MMJT-images/1.jpg'),
@@ -143,7 +144,7 @@ export const CarouselDisplay = () => {
             ]
         },
         {
-            value: 'Project 08',
+            value: '08',
             title: 'PJHY',
             images: [
                 require('../../assets/image/demos/PJHY-images/1.jpg'),
@@ -169,7 +170,7 @@ export const CarouselDisplay = () => {
             ]
         },
         {
-            value: 'Project 09',
+            value: '09',
             title: 'SASF',
             images: [
                 require('../../assets/image/demos/SASF-images/1.jpg'),
@@ -186,7 +187,7 @@ export const CarouselDisplay = () => {
             ]
         },
         {
-            value: 'Project 10',
+            value: '10',
             title: 'SEMS',
             images: [
                 require('../../assets/image/demos/SEMS-images/1.jpg'),
@@ -215,13 +216,14 @@ export const CarouselDisplay = () => {
 
   return (
     <section className="carousel container">
-    <Row>
+    <Row justify='space-evenly'>
        <Col md={14} xs={24}>
         <Carousel
             className="demo-carousel"
             pauseOnFocus={true}
             draggable={true}
             autoplaySpeed={6000}
+            lazyLoad="ondemand"
             dots={{
             className: "carousel-dots"
             }} autoplay>
@@ -241,7 +243,7 @@ export const CarouselDisplay = () => {
                     ))
                 }
         </Carousel>
-            
+        
         <Carousel 
             slidesToShow = {3}
             draggable={true}
@@ -258,7 +260,7 @@ export const CarouselDisplay = () => {
                             <span>
                                 <span>
                                 <span>
-                                    <h1>{item.value}</h1>
+                                    <h1>{getTranslation('project')} &nbsp; {item.value}</h1>
                                 </span>
                                 </span>
                             </span>
@@ -269,10 +271,10 @@ export const CarouselDisplay = () => {
         </Carousel>
         </Col>
         <Col md={8} xs={24} className='about-us'>
-            <h1>About Us</h1>
+            <h1>{getTranslation("about-us")}</h1>
 
-            <h5>Improve your home spacing and enhance your life style</h5>
-            <p>We specialize in interior and exterior design. By blending innovation and art, we strive to create spaces that are comfortable, stylish and functional. Whether it is interior space or architectural appearance, we pay attention to details and are committed to giving each project a unique soul.</p>
+            <h5>{getTranslation("about-us-title")}</h5>
+            <p>{getTranslation("about-us-content")}</p>
         </Col>
     </Row>
   </section>
